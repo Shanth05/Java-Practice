@@ -21,12 +21,6 @@ class Student {
         this.name = name;
     }
 
-    // Constructor with String and int parameters
-    Student(String name, int id) {
-        this.id = id;
-        this.name = name;
-    }
-
     // Constructor with int and String parameters
     Student(int id, String name) {
         this.id = id;
@@ -40,11 +34,11 @@ class Student {
 }
 
 public class MainStudent {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Student stu1 = new Student();
         stu1.display();
 
-        Student stu2 = new Student(1500);
+        Student stu2 = new Student(2000);
         stu2.display();
 
         Student stu3 = new Student("muralee");
@@ -53,7 +47,7 @@ public class MainStudent {
         Student stu4 = new Student(3500, "kokul");
         stu4.display();
 
-        Student stu5 = new Student("kavi", 3600);
-        stu5.display();
+        //Student stu5 = new Student("kavi", 3600);
+        //stu5.display();
     }
 }
